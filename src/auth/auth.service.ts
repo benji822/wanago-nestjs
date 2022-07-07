@@ -1,6 +1,6 @@
 import { ConfigService } from '@nestjs/config';
-import PostgresErrorCode from './../database/postgresErrorCodes.enum';
-import { UsersService } from './../users/users.service';
+import PostgresErrorCode from '../database/postgresErrorCodes.enum';
+import { UsersService } from '../users/users.service';
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import RegisterDto from './dtos/register.dto';
@@ -8,7 +8,7 @@ import { JwtService } from '@nestjs/jwt';
 import TokenPayload from './tokenPayload.interface';
 
 @Injectable()
-export class AuthenticationService {
+export class AuthService {
   constructor(
     private readonly usersService: UsersService,
     private readonly jwtService: JwtService,

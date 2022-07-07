@@ -11,7 +11,8 @@ import {
   Put,
   UseGuards,
 } from '@nestjs/common';
-import JwtAuthenticationGuard from 'src/authentication/jwt-authentication.guard';
+import JwtAuthGuard from 'src/auth/jwt-auth.guard';
+import FindOneParams from 'src/utils/findOneParams';
 
 @Controller('posts')
 export class PostsController {
@@ -23,12 +24,12 @@ export class PostsController {
   }
 
   @Get(':id')
-  getPostById(@Param('id') id: string) {
+  getPostById(@Param() { id }: FindOneParams) {
     return this.postService.getPostById(Number(id));
   }
 
   @Post()
-  @UseGuards(JwtAuthenticationGuard)
+  @UseGuards(JwtAuthGuard)
   async createPost(@Body() post: CreatePostDto) {
     return this.postService.createPost(post);
   }

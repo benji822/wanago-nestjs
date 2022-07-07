@@ -1,5 +1,5 @@
-import JwtAuthenticationGuard from 'src/authentication/jwt-authentication.guard';
-import { AuthenticationService } from './authentication.service';
+import JwtAuthGuard from 'src/auth/jwt-auth.guard';
+import { AuthService } from './auth.service';
 import {
   Body,
   Controller,
@@ -11,15 +11,15 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import RegisterDto from './dtos/register.dto';
-import { LocalAuthenticationGuard } from './localAuthentication.guard';
+import { LocalAuthGuard } from './localAuth.guard';
 import RequestWithUser from './requestWithUser.interface';
 import { Response } from 'express';
 
-@Controller('authentication')
-export class AuthenticationController {
-  constructor(private readonly authenticationService: AuthenticationService) {}
+@Controller('auth')
+export class AuthController {
+  constructor(private readonly authService: AuthService) {}
 
-  @UseGuards(JwtAuthenticationGuard)
+  @UseGuards(JwtAuthGuard)
   @Get()
   authenticate(@Req() request: RequestWithUser) {
     const user = request.user;
@@ -29,15 +29,15 @@ export class AuthenticationController {
 
   @Post('register')
   async register(@Body() registrationData: RegisterDto) {
-    return await this.authenticationService.register(registrationData);
+    return await this.authService.register(registrationData);
   }
 
   @HttpCode(200)
-  @UseGuards(LocalAuthenticationGuard)
+  @UseGuards(LocalAuthGuard)
   @Post('login')
   async login(@Req() request: RequestWithUser, @Res() response: Response) {
     const user = request.user;
-    const cookie = this.authenticationService.getCookieWithJwtToken(user.id);
+    const cookie = this.authService.getCookieWithJwtToken(user.id);
     console.log(cookie);
 
     response.setHeader('Set-Cookie', cookie);
@@ -45,13 +45,10 @@ export class AuthenticationController {
     return response.send(user);
   }
 
-  @UseGuards(JwtAuthenticationGuard)
+  @UseGuards(JwtAuthGuard)
   @Post('logout')
   async logout(@Req() request: RequestWithUser, @Res() response: Response) {
-    response.setHeader(
-      'Set-Cookie',
-      this.authenticationService.getCookieForLogOut(),
-    );
+    response.setHeader('Set-Cookie', this.authService.getCookieForLogOut());
     return response.sendStatus(200);
   }
 }
