@@ -2,13 +2,16 @@ import JwtAuthGuard from 'src/auth/jwt-auth.guard';
 import { AuthService } from './auth.service';
 import {
   Body,
+  ClassSerializerInterceptor,
   Controller,
   Get,
   HttpCode,
   Post,
   Req,
   Res,
+  SerializeOptions,
   UseGuards,
+  UseInterceptors,
 } from '@nestjs/common';
 import RegisterDto from './dtos/register.dto';
 import { LocalAuthGuard } from './localAuth.guard';
@@ -16,6 +19,10 @@ import RequestWithUser from './requestWithUser.interface';
 import { Response } from 'express';
 
 @Controller('auth')
+// @UseInterceptors(ClassSerializerInterceptor)
+@SerializeOptions({
+  strategy: 'excludeAll',
+})
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
@@ -35,14 +42,13 @@ export class AuthController {
   @HttpCode(200)
   @UseGuards(LocalAuthGuard)
   @Post('login')
-  async login(@Req() request: RequestWithUser, @Res() response: Response) {
-    const user = request.user;
+  async login(@Req() request: RequestWithUser) {
+    const { user } = request;
     const cookie = this.authService.getCookieWithJwtToken(user.id);
-    console.log(cookie);
+    console.log(user);
 
-    response.setHeader('Set-Cookie', cookie);
-    user.password = undefined;
-    return response.send(user);
+    request.res.setHeader('Set-Cookie', cookie);
+    return user;
   }
 
   @UseGuards(JwtAuthGuard)

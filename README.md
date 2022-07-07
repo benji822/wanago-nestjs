@@ -4,70 +4,74 @@
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
-  
+
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## API with NestJS
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-  Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+*   1\. [API with NestJS #1. Controllers, routing and the module structure](https://wanago.io/2020/05/11/nestjs-api-controllers-routing-module/ "API with NestJS #1. Controllers, routing and the module structure")
+*   2\. [API with NestJS #2. Setting up a PostgreSQL database with TypeORM](https://wanago.io/2020/05/18/api-nestjs-postgresql-typeorm/ "API with NestJS #2. Setting up a PostgreSQL database with TypeORM")
+*   3\. [API with NestJS #3. Authenticating users with bcrypt, Passport, JWT, and cookies](https://wanago.io/2020/05/25/api-nestjs-authenticating-users-bcrypt-passport-jwt-cookies/ "API with NestJS #3. Authenticating users with bcrypt, Passport, JWT, and cookies")
+*   4\. [API with NestJS #4. Error handling and data validation](https://wanago.io/2020/06/01/api-nestjs-error-handling-validation/ "API with NestJS #4. Error handling and data validation")
+*   5\. [API with NestJS #5. Serializing the response with interceptors](https://wanago.io/2020/06/08/api-nestjs-serializing-response-interceptors/ "API with NestJS #5. Serializing the response with interceptors")
+*   6\. [API with NestJS #6. Looking into dependency injection and modules](https://wanago.io/2020/06/15/api-with-nestjs-6-looking-into-dependency-injection-and-modules/ "API with NestJS #6. Looking into dependency injection and modules")
+*   7\. [API with NestJS #7. Creating relationships with Postgres and TypeORM](https://wanago.io/2020/06/22/api-nestjs-relationships-postgres-typeorm/ "API with NestJS #7. Creating relationships with Postgres and TypeORM")
+*   8\. [API with NestJS #8. Writing unit tests](https://wanago.io/2020/07/06/api-nestjs-unit-tests/ "API with NestJS #8. Writing unit tests")
+*   9\. [API with NestJS #9. Testing services and controllers with integration tests](https://wanago.io/2020/07/13/api-nestjs-testing-services-controllers-integration-tests/ "API with NestJS #9. Testing services and controllers with integration tests")
+*   10\. [API with NestJS #10. Uploading public files to Amazon S3](https://wanago.io/2020/08/03/api-nestjs-uploading-public-files-to-amazon-s3/ "API with NestJS #10. Uploading public files to Amazon S3")
+*   11\. [API with NestJS #11. Managing private files with Amazon S3](https://wanago.io/2020/08/10/api-nestjs-private-files-amazon-s3/ "API with NestJS #11. Managing private files with Amazon S3")
+*   12\. [API with NestJS #12. Introduction to Elasticsearch](https://wanago.io/2020/09/07/api-nestjs-elasticsearch/ "API with NestJS #12. Introduction to Elasticsearch")
+*   13\. [API with NestJS #13. Implementing refresh tokens using JWT](https://wanago.io/2020/09/21/api-nestjs-refresh-tokens-jwt/ "API with NestJS #13. Implementing refresh tokens using JWT")
+*   14\. [API with NestJS #14. Improving performance of our Postgres database with indexes](https://wanago.io/2020/10/19/nestjs-performance-postgres-database-indexes/ "API with NestJS #14. Improving performance of our Postgres database with indexes")
+*   15\. [API with NestJS #15. Defining transactions with PostgreSQL and TypeORM](https://wanago.io/2020/10/26/api-nestjs-transactions-postgresql-typeorm/ "API with NestJS #15. Defining transactions with PostgreSQL and TypeORM")
+*   16\. [API with NestJS #16. Using the array data type with PostgreSQL and TypeORM](https://wanago.io/2020/11/02/api-nestjs-array-data-type-postgresql-typeorm/ "API with NestJS #16. Using the array data type with PostgreSQL and TypeORM")
+*   17\. [API with NestJS #17. Offset and keyset pagination with PostgreSQL and TypeORM](https://wanago.io/2020/11/09/api-nestjs-offset-keyset-pagination-postgresql-typeorm/ "API with NestJS #17. Offset and keyset pagination with PostgreSQL and TypeORM")
+*   18\. [API with NestJS #18. Exploring the idea of microservices](https://wanago.io/2020/11/16/api-nestjs-microservices/ "API with NestJS #18. Exploring the idea of microservices")
+*   19\. [API with NestJS #19. Using RabbitMQ to communicate with microservices](https://wanago.io/2020/11/23/api-nestjs-rabbitmq-microservices/ "API with NestJS #19. Using RabbitMQ to communicate with microservices")
+*   20\. [API with NestJS #20. Communicating with microservices using the gRPC framework](https://wanago.io/2020/11/30/api-nestjs-microservices-grpc-framework/ "API with NestJS #20. Communicating with microservices using the gRPC framework")
+*   21\. [API with NestJS #21. An introduction to CQRS](https://wanago.io/2020/12/07/api-nestjs-introduction-cqrs/ "API with NestJS #21. An introduction to CQRS")
+*   22\. [API with NestJS #22. Storing JSON with PostgreSQL and TypeORM](https://wanago.io/2020/12/28/nestjs-json-postgresql-typeorm/ "API with NestJS #22. Storing JSON with PostgreSQL and TypeORM")
+*   23\. [API with NestJS #23. Implementing in-memory cache to increase the performance](https://wanago.io/2021/01/04/api-nestjs-in-memory-cache-performance/ "API with NestJS #23. Implementing in-memory cache to increase the performance")
+*   24\. [API with NestJS #24. Cache with Redis. Running the app in a Node.js cluster](https://wanago.io/2021/01/11/nestjs-cache-redis-node-js-cluster/ "API with NestJS #24. Cache with Redis. Running the app in a Node.js cluster")
+*   25\. [API with NestJS #25. Sending scheduled emails with cron and Nodemailer](https://wanago.io/2021/01/18/api-nestjs-cron-nodemailer/ "API with NestJS #25. Sending scheduled emails with cron and Nodemailer")
+*   26\. [API with NestJS #26. Real-time chat with WebSockets](https://wanago.io/2021/01/25/api-nestjs-chat-websockets/ "API with NestJS #26. Real-time chat with WebSockets")
+*   27\. [API with NestJS #27. Introduction to GraphQL. Queries, mutations, and authentication](https://wanago.io/2021/02/01/api-nestjs-graphql-introduction/ "API with NestJS #27. Introduction to GraphQL. Queries, mutations, and authentication")
+*   28\. [API with NestJS #28. Dealing in the N + 1 problem in GraphQL](https://wanago.io/2021/02/08/api-nestjs-n-1-problem-graphql/ "API with NestJS #28. Dealing in the N + 1 problem in GraphQL")
+*   29\. [API with NestJS #29. Real-time updates with GraphQL subscriptions](https://wanago.io/2021/02/15/api-nestjs-real-time-graphql-subscriptions/ "API with NestJS #29. Real-time updates with GraphQL subscriptions")
+*   30\. [API with NestJS #30. Scalar types in GraphQL](https://wanago.io/2021/02/22/api-nestjs-scalar-types-graphql/ "API with NestJS #30. Scalar types in GraphQL")
+*   31\. [API with NestJS #31. Two-factor authentication](https://wanago.io/2021/03/08/api-nestjs-two-factor-authentication/ "API with NestJS #31. Two-factor authentication")
+*   32\. [API with NestJS #32. Introduction to Prisma with PostgreSQL](https://wanago.io/2021/03/29/api-nestjs-prisma-postgresql/ "API with NestJS #32. Introduction to Prisma with PostgreSQL")
+*   33\. [API with NestJS #33. Managing PostgreSQL relationships with Prisma](https://wanago.io/2021/04/05/api-nestjs-33-postgresql-relationships-prisma/ "API with NestJS #33. Managing PostgreSQL relationships with Prisma")
+*   34\. [API with NestJS #34. Handling CPU-intensive tasks with queues](https://wanago.io/2021/05/03/api-nestjs-cpu-intensive-tasks-queues/ "API with NestJS #34. Handling CPU-intensive tasks with queues")
+*   35\. [API with NestJS #35. Using server-side sessions instead of JSON Web Tokens](https://wanago.io/2021/06/07/api-nestjs-server-side-sessions-instead-of-json-web-tokens/ "API with NestJS #35. Using server-side sessions instead of JSON Web Tokens")
+*   36\. [API with NestJS #36. Introduction to Stripe with React](https://wanago.io/2021/06/14/api-nestjs-stripe-react/ "API with NestJS #36. Introduction to Stripe with React")
+*   37\. [API with NestJS #37. Using Stripe to save credit cards for future use](https://wanago.io/2021/06/21/api-nestjs-stripe-save-credit-cards/ "API with NestJS #37. Using Stripe to save credit cards for future use")
+*   38\. [API with NestJS #38. Setting up recurring payments via subscriptions with Stripe](https://wanago.io/2021/06/28/api-nestjs-subscriptions-with-stripe/ "API with NestJS #38. Setting up recurring payments via subscriptions with Stripe")
+*   39\. [API with NestJS #39. Reacting to Stripe events with webhooks](https://wanago.io/2021/07/05/api-nestjs-stripe-events-webhooks/ "API with NestJS #39. Reacting to Stripe events with webhooks")
+*   40\. [API with NestJS #40. Confirming the email address](https://wanago.io/2021/07/12/api-nestjs-confirming-email/ "API with NestJS #40. Confirming the email address")
+*   41\. [API with NestJS #41. Verifying phone numbers and sending SMS messages with Twilio](https://wanago.io/2021/07/19/api-nestjs-verifying-phone-numbers-sending-sms-twilio/ "API with NestJS #41. Verifying phone numbers and sending SMS messages with Twilio")
+*   42\. [API with NestJS #42. Authenticating users with Google](https://wanago.io/2021/07/26/api-nestjs-google-authentication/ "API with NestJS #42. Authenticating users with Google")
+*   43\. [API with NestJS #43. Introduction to MongoDB](https://wanago.io/2021/08/16/api-nestjs-mongodb/ "API with NestJS #43. Introduction to MongoDB")
+*   44\. [API with NestJS #44. Implementing relationships with MongoDB](https://wanago.io/2021/08/23/api-nestjs-relationships-mongodb/ "API with NestJS #44. Implementing relationships with MongoDB")
+*   45\. [API with NestJS #45. Virtual properties with MongoDB and Mongoose](https://wanago.io/2021/08/30/api-nestjs-virtual-properties-mongodb-mongoose/ "API with NestJS #45. Virtual properties with MongoDB and Mongoose")
+*   46\. [API with NestJS #46. Managing transactions with MongoDB and Mongoose](https://wanago.io/2021/09/06/api-nestjs-transactions-mongodb-mongoose/ "API with NestJS #46. Managing transactions with MongoDB and Mongoose")
+*   47\. [API with NestJS #47. Implementing pagination with MongoDB and Mongoose](https://wanago.io/2021/09/13/api-nestjs-pagination-mongodb-mongoose/ "API with NestJS #47. Implementing pagination with MongoDB and Mongoose")
+*   48\. [API with NestJS #48. Definining indexes with MongoDB and Mongoose](https://wanago.io/2021/09/20/api-nestjs-indexes-mongodb-mongoose/ "API with NestJS #48. Definining indexes with MongoDB and Mongoose")
+*   49\. [API with NestJS #49. Updating with PUT and PATCH with MongoDB and Mongoose](https://wanago.io/2021/09/27/api-nestjs-put-patch-mongodb-mongoose/ "API with NestJS #49. Updating with PUT and PATCH with MongoDB and Mongoose")
+*   50\. [API with NestJS #50. Introduction to logging with the built-in logger and TypeORM](https://wanago.io/2021/10/04/api-nestjs-logging-typeorm/ "API with NestJS #50. Introduction to logging with the built-in logger and TypeORM")
+*   51\. [API with NestJS #51. Health checks with Terminus and Datadog](https://wanago.io/2021/10/11/api-nestjs-health-checks-terminus-datadog/ "API with NestJS #51. Health checks with Terminus and Datadog")
+*   52\. [API with NestJS #52. Generating documentation with Compodoc and JSDoc](https://wanago.io/2021/10/18/api-nestjs-documentation-compodoc-jsdoc/ "API with NestJS #52. Generating documentation with Compodoc and JSDoc")
+*   53\. [API with NestJS #53. Implementing soft deletes with PostgreSQL and TypeORM](https://wanago.io/2021/10/25/api-nestjs-soft-deletes-postgresql-typeorm/ "API with NestJS #53. Implementing soft deletes with PostgreSQL and TypeORM")
+*   54\. [API with NestJS #54. Storing files inside a PostgreSQL database](https://wanago.io/2021/11/01/api-nestjs-storing-files-postgresql-database/ "API with NestJS #54. Storing files inside a PostgreSQL database")
+*   55\. [API with NestJS #55. Uploading files to the server](https://wanago.io/2021/11/08/api-nestjs-uploading-files-to-server/ "API with NestJS #55. Uploading files to the server")
+*   56\. [API with NestJS #56. Authorization with roles and claims](https://wanago.io/2021/11/15/api-nestjs-authorization-roles-claims/ "API with NestJS #56. Authorization with roles and claims")
+*   57\. [API with NestJS #57. Composing classes with the mixin pattern](https://wanago.io/2021/12/13/api-nestjs-mixin-pattern/ "API with NestJS #57. Composing classes with the mixin pattern")
+*   58\. [API with NestJS #58. Using ETag to implement cache and save bandwidth](https://wanago.io/2022/01/17/api-nestjs-etag-cache/ "API with NestJS #58. Using ETag to implement cache and save bandwidth")
+*   59\. [API with NestJS #59. Introduction to a monorepo with Lerna and Yarn workspaces](https://wanago.io/2022/01/31/api-nestjs-monorepo-lerna-yarn-workspaces/ "API with NestJS #59. Introduction to a monorepo with Lerna and Yarn workspaces")
+*   60\. [API with NestJS #60. The OpenAPI specification and Swagger](https://wanago.io/2022/02/14/api-nestjs-openapi-swagger/ "API with NestJS #60. The OpenAPI specification and Swagger")
+*   61\. [API with NestJS #61. Dealing with circular dependencies](https://wanago.io/2022/02/28/api-nestjs-circular-dependencies/ "API with NestJS #61. Dealing with circular dependencies")
+*   62\. [API with NestJS #62. Introduction to MikroORM with PostgreSQL](https://wanago.io/2022/05/23/api-nestjs-mikroorm-postgresql/ "API with NestJS #62. Introduction to MikroORM with PostgreSQL")
+*   63\. [API with NestJS #63. Relationships with PostgreSQL and MikroORM](https://wanago.io/2022/05/30/api-nestjs-relationships-postgresql-mikroorm/ "API with NestJS #63. Relationships with PostgreSQL and MikroORM")
+*   64\. [API with NestJS #64. Transactions with PostgreSQL and MikroORM](https://wanago.io/2022/06/06/api-nestjs-transactions-postgresql-mikroorm/ "API with NestJS #64. Transactions with PostgreSQL and MikroORM")
+*   65\. [API with NestJS #65. Implementing soft deletes using MikroORM and filters](https://wanago.io/2022/06/13/api-nestjs-soft-deletes-mikroorm-filters/ "API with NestJS #65. Implementing soft deletes using MikroORM and filters")
+*   66\. [API with NestJS #66. Improving PostgreSQL performance with indexes using MikroORM](https://wanago.io/2022/06/20/api-nestjs-postgresql-mikroorm-indexes/ "API with NestJS #66. Improving PostgreSQL performance with indexes using MikroORM")
